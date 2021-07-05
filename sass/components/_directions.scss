@@ -1,0 +1,32 @@
+.direction {
+  padding-top: 94px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.direction-list {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 0px;
+}
+.direction-list__item {
+  position: relative;
+}
+.direction-list__text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  bottom: 0px;
+  height: 70px;
+  width: 100%;
+  background-color: rgba(47, 48, 57, 0.8);
+  color: #ffffff;
+}

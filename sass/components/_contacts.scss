@@ -1,0 +1,22 @@
+.contacts {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+.contacts__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.address {
+  width: 238px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--white-text-color);
+}
+.mail-icon,
+.tel-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
