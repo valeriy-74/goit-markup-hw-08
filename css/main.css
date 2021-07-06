@@ -733,16 +733,14 @@ ul {
 
 .client {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .client__list {
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: space-between;
   margin-bottom: -30px;
-  margin-right: -30px;
+  margin-left: -30px;
 }
 
 @media screen and (min-width: 480px) {
@@ -756,27 +754,24 @@ ul {
 
 .client__item {
   margin-bottom: 30px;
+  margin-left: 30px;
 }
 
 @media screen and (min-width: 480px) {
   .client__item {
     flex-basis: calc((100% - 60px) / 2);
-    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .client__item {
     flex-basis: calc((100% - 90px) / 3);
-    margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .client__item {
     flex-basis: calc((100% - 120px) / 6);
-    padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
