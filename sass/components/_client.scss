@@ -1,13 +1,18 @@
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .client__list {
-  display: flex;
+  // display: flex;
   justify-content: space-between;
 }
 .client .section__title {
-  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.19;
+  padding-bottom: 30px;
 }
 .client__link {
   display: flex;

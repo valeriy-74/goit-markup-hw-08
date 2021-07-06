@@ -1,13 +1,19 @@
 .direction {
-  padding-top: 94px;
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .direction-list {

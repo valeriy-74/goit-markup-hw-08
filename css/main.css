@@ -30,9 +30,22 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -569,22 +582,39 @@ ul {
 
 @media screen and (min-width: 768px) {
   .feature-list__item {
-    flex-basis: calc((100% -60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
     margin-left: 30px;
   }
 }
 
-.direction {
-  padding-top: 94px;
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .direction {
+    display: none;
+  }
 }
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: var(--secondary-text-color);
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .direction-list {
@@ -611,8 +641,8 @@ ul {
 }
 
 .comand {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin-bottom: 0;
   margin-right: auto;
   align-items: center;
@@ -620,14 +650,39 @@ ul {
 }
 
 .comand-list {
-  display: flex;
   justify-content: space-between;
   background: #f5f4fa;
 }
 
+@media screen and (min-width: 768px) {
+  .comand-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
 .comand-list__item {
+  display: block;
+  max-width: 100%;
+  height: auto;
   background: #ffffff;
   box-shadow: 0px 9px 17px 1px rgba(0, 0, 0, 0.54);
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .comand-list__item {
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .comand-list__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
 .comand-list__title {
@@ -677,17 +732,21 @@ ul {
 }
 
 .client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 
 .client__list {
-  display: flex;
   justify-content: space-between;
 }
 
 .client .section__title {
-  margin-bottom: 50px;
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.19;
+  padding-bottom: 30px;
 }
 
 .client__link {
